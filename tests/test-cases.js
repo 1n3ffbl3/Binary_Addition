@@ -24,8 +24,16 @@ tests({
     eq("-100", binaryAddition(-2,-2));
   }
 
-'one positiveo one negative numbers': function() {
+'one positive one negative numbers': function() {
     eq("-1", binaryAddition(2,-3));
   }
 
+
+'big numbers': function() {
+    eq("", binaryAddition(1111110,1111111111111111111));
+  }
+
+'big numbers': function() {
+    eq("", binaryAddition(11111104564657,11111111111111111888));
+  }
 });
