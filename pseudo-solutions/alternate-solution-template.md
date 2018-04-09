@@ -1,7 +1,23 @@
 # Alternate Strategy Name
 
+https://developer.mozilla.org/pl/docs/Web/JavaScript/Guide/Text_formatting
+
+
 ```
-pseudocode solution goes here
+function binaryAddition2(a,b) {
+  var sum = a + b;
+  return sum.toString(2);
+  }
+
+  binaryAddition2(45,4)
+
+  binaryAddition2: Function
+* Args: 2
+  *  a : number
+  *  a : number 
+* Return:  sum of a and b  parse it to binary and string
+  * (Describe the return value)
+* Behavior: takes two numbers and returns their sum as binary string 
 ```
 ---
 

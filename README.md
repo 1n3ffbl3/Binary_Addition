@@ -12,6 +12,8 @@ Find the next larges power of 2 you can substract from remainder. Put a 1 in tha
 Binary Addition : 
 
 11011+10010 = 101101 - > Just like base 10, but you jump to the next column...
+
+
 binaryAddition: Function
 * Args: 2
   *  num_one : number
@@ -21,6 +23,17 @@ binaryAddition: Function
 * Behavior: takes two numbers and returns their sum as binary string 
 
 '''js
+
+function addBinary(a,b) {
+  var c = a + b;
+  var res = '';
+  while (c >= 1) {
+    var res = c % 2 + res;
+    c = Math.floor(c / 2);
+  }
+  return res;
+} 
+
 // copy of your polished solution for easy reference.
 '''
 
@@ -41,7 +54,7 @@ binaryAddition: Function
 ## Input Classifications
 
 What characteristics of your inputs are important for your solution?  
-	- numbers:  We will assume that our fution will be passed numbers, so there's no need for handling types or conversions. Since all we need to do is add two numbers, and the numbers are coming in as numbers. While there are no theoretical difference between input classification, because of how JS handles type conversions and addition there are some cases we need to keep in mind:
+	- numbers:  We will assume that our function will be passed numbers, so there's no need for handling types or conversions. Since all we need to do is add two numbers, and the numbers are coming in as numbers. While there are no theoretical difference between input classification, because of how JS handles type conversions and addition there are some cases we need to keep in mind:
 	* starting with a 0 or not
 	* negative or not
 	* decimals vs whole numbers - ignore that for now

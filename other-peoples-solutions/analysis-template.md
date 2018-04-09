@@ -1,4 +1,4 @@
-# [<username>](https://www.codewars.com/users/<username>)'s Solution
+# [Z1x](https://www.codewars.com/users/Z1x)'s Solution
 
 ```js
 
@@ -19,8 +19,8 @@ function addBinary(a,b) {
 
 Explain the solution they used.  Was it heavy in logic or languge features? What strategies did they use?  How is it like and unlike others?
 
-This solution provides us the function calls addBinary with two variables : "var c" which is sum of two integers (a and b) and "var res" which is an empty string. 
-Inside the function we can find the one context : while loop. Inside the while loop we can find one condition : the sum of two integers must be bigger and equal to 1. In the context there are also the "var res" with
+This solution provides us the function calls addBinary with two variables : "var c" which is sum of two integers a and b and "var res" which is an empty string. 
+Inside the function we can find the one context : while loop. Inside the while loop there is one condition : the sum of two integers must be bigger or equal to 1. In the context there are also the "var res" with
 decrements our "c" by 2 and the method Math.floor (). 
 ---
 
@@ -28,7 +28,7 @@ decrements our "c" by 2 and the method Math.floor ().
 
 What language features did they use?
 
-* while True
+* while loop
 * method Math.floor()
 
 ---
